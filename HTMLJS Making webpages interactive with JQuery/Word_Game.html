@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Word game </title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            form {
+                font-size: 1.5em;
+            }
+            .scrambled, input, button {
+                font-family: monospace;
+                font-size: 2em;
+            }
+            .welcome{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+
+    <h1>Word game!</h1>
+    <form id="joke-form">
+        <label>
+            Unscramble these letters to form a word:<Br>
+            <span class="scrambled">REYJUQ</span>
+            <br>
+            <input type="text" size="10">
+        </label>
+        <button type="submit">Check</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        var answer = "JQUERY";
+        // when the user submits the form,
+        $("#joke-form").on("submit", function(event) {
+       event.preventDefault();
+       var input = $(this).find("[type=text]").val();
+       var response = $("<p>")
+            .text("test")
+            .addClass("welcome")
+            .appendTo("body");
+        console.log(response);
+        console.log(input);
+        if(answer === input){
+            response.text("you got it right!");
+        }else{
+            response.text("you got it wrong.");
+
+        }
+        });
+
+        //   check that their answer is correct
+        //   and show them appropriate message
+    </script>
+    </body>
+</html>
