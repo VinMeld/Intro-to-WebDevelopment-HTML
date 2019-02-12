@@ -9,11 +9,11 @@ This is the image of my Recipie book: ![Recipie book](https://image.prntscr.com/
 ## HTML/JS Making webpages interactive with jQuery
 
 ### Scene Change:
-![Scene Change]()
+![Scene Change](https://gyazo.com/0acf6002b31aec848778d2506974739c)
 ### Word_Game:
 
-![Word Game]()
+![Word Game](https://gyazo.com/85b1fa772bdf62762d5d1dda9ed4273a)
 
 ### Interactive Slideshow:
 
-![Interactive Slideshow]()
+![Interactive Slideshow](https://gyazo.com/233d32d38db87fc7be755789deb20e93)
